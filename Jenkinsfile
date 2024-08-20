@@ -1,9 +1,7 @@
 pipeline {
-    agent {
-        docker {
-            image 'maven:3.9.0'
-            args '-v /root/.m2:/root/.m2'
-        }
+    agent any
+    tools {
+        maven
     }
     stages {
         stage('Build') {
@@ -21,10 +19,10 @@ pipeline {
                 }
             }
         }
-        stage('Deliver') {
-            steps {
-                sh './jenkins/scripts/deliver.sh'
-            }
-        }
+        // stage('Deliver') {
+        //     steps {
+        //         sh './jenkins/scripts/deliver.sh'
+        //     }
+        // }
     }
 }
