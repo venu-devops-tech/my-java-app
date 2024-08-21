@@ -31,7 +31,7 @@ pipeline {
                 withSonarQubeEnv("${SONARSERVER}") {
                     sh '''${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=venu-devops-tech_my-java-app \
                     -Dsonar.projectName=my-java-app \
-                    -Dsonar.orgamization=venu-devops-tech \
+                    -Dsonar.organization=venu-devops-tech \
                     -Dsonar.projectVersion=1.0 \
                     -Dsonar.sources=src/ \
                     -Dsonar.java.binaries=target/test-classes/com/mycompany/app/controllerTest/ \
