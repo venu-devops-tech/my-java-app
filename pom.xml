@@ -100,7 +100,7 @@
                 </includes>
                 <forkCount>0</forkCount>
             </configuration>
-        </plugin>
-    </plugins> -->
+        </plugin>  -->
+    </plugins>
   </build>
 </project>
