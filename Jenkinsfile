@@ -34,7 +34,7 @@ pipeline {
                     -Dsonar.organization=venu-devops-tech \
                     -Dsonar.projectVersion=1.0 \
                     -Dsonar.sources=src/ \
-                    -Dsonar.java.binaries=target/test-classes/com/mycompany/app/controllerTest/ \
+                    -Dsonar.java.binaries=target/test-classes/com/mycompany/app/ \
                     -Dsonar.junit.reportsPath=target/surefire-reports/ \
                     -Dsonar.jacoco.reportsPath=target/jacoco.exec \
                     -Dsonar.java.checkstyle.reportPaths=target/checkstyle-result.xml'''
